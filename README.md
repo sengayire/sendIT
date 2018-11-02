@@ -4,5 +4,5 @@ SendIT is a courier service that helps users deliver parcels to different destin
 provides courier quotes based on weight categories.
 
 
-#The user gets real-time email notification when any changes has been made to the status of their parcel.
+#The user gets real-time email notification when an changes has been made to the status of their parcel.
 
