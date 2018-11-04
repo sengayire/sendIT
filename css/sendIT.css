@@ -28,6 +28,11 @@ header #logo img{
 
 		color: #404040;
 	}
+	.pp{
+		color: #404040;
+
+
+	}
 	.menu{
 
 		margin-top: 50px;
@@ -193,9 +198,82 @@ form #login-frm{
 }
 /* dashb*/
 
- form #dshb{
+.form-dsb form {
+	width: 70%;
+	background: #ffffff;
+	height: 300px;
+	margin-left: 50px;
+	margin-top: 60px;
+	float: left;
+    
+}
+.form-dsb button{
 
-	display: none;
+	width: 100px;
+}
+.form-dsb h1 {
+	font-size: 25px;
+	color: #404040;
+	margin-left: 20px;
+	margin-top: 30px;
+    
+}
+.form-dsb form input{
+ 	float: none;
+	display: inline;
+	width: 200px;
+	height: 40px;
+}
+.form-dsb form input[type="number"]{
+	width: 50px;
+	margin-right: 0;
+	padding-left: 5px;
+	margin-top: 20px;
+	height: 20px;
+}
+.form-dsb form button{
+
+	display: inline;
+
+}
+.quote{
+	margin-top: 20px;
+	margin-left: 20px;
+	background: #e48542;
+	height: 65px;
+	position: center;
+	width: 760px;
+	color: white;
+}
+.quote span{
+	margin-right: 50px;
+	margin-left: 40px;
+}
+.quote-info{
+	margin-top: 20px;
+
+}
+.quote-info,label{
+	margin-left: 20px;
+
+}
+
+.btn-quote{
+	float: right;
+	margin-right: 20px;
+	background-color: #ff974fbf;
+	color: #ffffff;
+}
+.btn-add-quote{
+	background: #565555b5;
+	color: #ffffff;
+}
+.user-quote aside{
+	float: right;
+	margin-top: 60px;
+	height: 300px;
+	background: white;
+	width: 23%;
+	margin-left: 10px;
 	
-
 }
