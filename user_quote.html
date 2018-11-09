@@ -38,15 +38,32 @@
 		<article class="user-quote">
 			<form id="dashb" action="">
 				<h1>Quick Quote</h1>
-				<div class="quote">
-					
-				    <span>
-				    	<label>From:</label>
-				    	<input type="text" name="" placeholder="Enter Number here"/></span>
+				<div class="quote"> 
+				   	<!-- <input type="text" name="" placeholder="Enter Number here"/> -->
+				<span class="from-dropdown">
+				 <label >From:</label>
+                 <select id="select_fr_pro" name="from_sender">
+                  <option value="">  &nbsp Select Province</option> 
+                  <option value="mvk">Kigai</option>
+                  <option value="north_pr">Northen Province</option> 
+                  <option value="south_pr">Southern Province</option>
+                  <option value="east_pr">Eastern Province</option> 
+                  <option value="north_pr">Western Province</option>
+                </select>
+              </span>
+              <span class="from-dropdown">
+				 <label >To:</label>
+                 <select id="select_fr_pro" name="from_sender">
+                  <option value="">  &nbsp Select Province</option> 
+                  <option value="mvk">Kigai</option>
+                  <option value="north_pr">Northen Province</option> 
+                  <option value="south_pr">Southern Province</option>
+                  <option value="east_pr">Eastern Province</option> 
+                  <option value="north_pr">Western Province</option>
+                </select>
+              </span>
 			        
-				    <span>
-				    	<label>To:</label>
-				    	<input type="text" name="" placeholder="Enter Number here "/></span>
+				    
 			   </div>
 			   <div class="quote-info">
 			   	    <label>Quantity:</label>
