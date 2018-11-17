@@ -9,6 +9,7 @@
   "author": "sengayire prince",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^6.23.0",
     "chai": "^4.2.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
