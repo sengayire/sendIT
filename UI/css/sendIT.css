@@ -125,11 +125,26 @@ header .user-au:hover{
 #showcase p{
 	font-size: 30px;
 }
+.welcome{
+
+	width: 700px;
+	height: 300px;
+	float: left;
+}
+#geo_pic{
+	width: 200px;
+	float: right;
+}
 #newsletter{
 	padding: 15px;
 	color: #ffffff;
+<<<<<<< HEAD
 	background:#35425a;
 	height: 70px;
+=======
+	background:#f8d7ac;
+	height: 80px;
+>>>>>>> [feature #162079395] improving a home page design by adding neccesary links to direct a visitor
 }
 #newsletter h1{
 	float: left;
@@ -138,11 +153,12 @@ header .user-au:hover{
 	float: right;
 	margin-top: 10px;
 }
-#newsletter input[type="email"]{
+#newsletter input[type="text"]{
 	padding: 4px;
 	height: 25px;
 	width: 250px;
 }
+<<<<<<< HEAD
 /* index style*/
 #track{
 		 height: 50px;
@@ -154,11 +170,16 @@ header .user-au:hover{
 }
 .button_1{
 	height: 38px;
+=======
+#newsletter .button_1{
+	height: 35px;
+>>>>>>> [feature #162079395] improving a home page design by adding neccesary links to direct a visitor
 	background:#e48542;
 	border: 0;
-	padding-right: 20px;
+	margin-right: 10px;
 	padding-left: 20px;
 	color: #ffffff;
+	width: 150px;
 }
 
 /*  frm*/
@@ -190,6 +211,37 @@ form #login-frm{
 .frm-container .button_1{
 	background-color: #606060;
 }
+.services{
+
+	float: left;
+	margin-left: 20px;
+	width: 400px;
+
+}
+.services ul{
+	list-style: none;
+}
+.our-work {
+	float: right;
+	margin-right: 20px;
+	width: 700px;
+}
+.our-work ul{
+	list-style: none;
+}
+.services #left{
+ float: left;
+}
+.services #right{
+	float: right;
+}
+.our-work #left{
+float: left;
+}
+.our-work #right{
+ float: right;
+}
+.....
 #signup-frm h1{
 	margin-left: 125px;
 
@@ -206,6 +258,20 @@ form #login-frm{
 #signup {
 	float: right;
 }
+<<<<<<< HEAD
+=======
+/* index style*/
+#Track{
+
+	float: left;
+	height: 70px;;
+}
+
+#Track input{
+
+	float: left;
+}
+>>>>>>> [feature #162079395] improving a home page design by adding neccesary links to direct a visitor
 /* dashb*/
 .form-dsb form {
 	width: 70%;
