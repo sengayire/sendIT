@@ -9,20 +9,21 @@ body{
 }
 .container{
 
-	width:90%;
-	margin-left: 40px;
+	width:100%;
+	margin-left: 0px;
 	overflow: hidden;
+	height: 70px;
 }
 header #logo img{
-    max-width: 150px;
-    max-height: 150px;
-    padding-top: 0;
-    padding-bottom: 0;
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 5px;
+    padding-left: 30px;
     float: left;
 	}
 	#sendit{
-		margin-top: 40px;
-		font-size: 17px;
+		margin-top: 7px;
+		font-size: 15px;
 	}
 	#it{
 
@@ -34,15 +35,15 @@ header #logo img{
 
 	}
 	.menu{
-
-		margin-top: 50px;
-		margin-right: 200px;
+		margin-right: 350px;
+		display: inline;
+		width: 500px;
 	}
 header{
 	background: #FFFFFF;
 	color: #ffffff;
-	padding-top:10px;
-	min-height:45px;
+	padding-top:0px;
+	height:70px;
 	border-bottom:#e8451d 3px solid;
 }
 header a{
@@ -65,15 +66,16 @@ header li{
 
 }
  .user{
-
 	float: right;
-	margin-left: 400px;
+	display: inline;
+	margin-left: 5px;
 	margin-right: 0;
+	width: 130px;
+	margin-top: 25px;
+	
 }
   .user a{
-  	padding-left: 10px;
-  	padding-right: 10px;
-  	
+  	margin-right: 5px;
   }
 header #branding{
 	float: left;
@@ -211,11 +213,13 @@ form #login-frm{
 .frm-container .button_1{
 	background-color: #606060;
 }
+/* Styling footer*/
 .services{
 
 	float: left;
 	margin-left: 20px;
 	width: 400px;
+	margin-top: 5px;
 
 }
 .services ul{
@@ -223,8 +227,9 @@ form #login-frm{
 }
 .our-work {
 	float: right;
-	margin-right: 20px;
-	width: 700px;
+	width: 600px;
+	margin-top: 0;
+	margin-right: 100px;
 }
 .our-work ul{
 	list-style: none;
@@ -240,8 +245,27 @@ float: left;
 }
 .our-work #right{
  float: right;
+ margin-right: 5px;
 }
-.....
+.our-work #right ul li img{
+	height: 80px;
+	width: 80px;
+	display: inline;
+   }
+   .our-work #right ul li{
+	display: inline;
+   }
+/*styling sign-up Page*/
+.container  #signup-body{
+	margin-left: 0%;
+}
+ #signup-body{
+
+	width: 1300px;
+	height: 420px;
+	margin-bottom: 5px;
+	background-image: url(../images/Sign.jpg);
+}
 #signup-frm h1{
 	margin-left: 125px;
 
@@ -252,19 +276,47 @@ float: left;
 	margin-top: 10px;
 	width: 300px;
 	margin-left: 0;
-	margin-right: 50px;
+	margin-right: 50px;	
+}
+#signup input{
+	background: #fffefece;
+	border-radius: 4px;
+	border-color: #faa96fa9;
+	color: rgb(37, 36, 36);
+	
+}
+#signup button{
+	background: #e48542;
+	border-radius: 10px;
+	border-color: transparent;
+	color: #FFFFFF;
+}
 
-}
-#signup {
+#signup  #right {
 	float: right;
+	width: 400px;
+	margin-right: 20px;
+	margin-top: 10px;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 /* index style*/
-#Track{
-
+=======
+#signup  #left {
 	float: left;
-	height: 70px;;
+	width: 800px;
+	margin-top: 60px;
+	font-family: -apple-system, BlinkMacSystemFont;
+	vertical-align: middle;
+	font-size: 35px;
+	margin-left: 20px;
+}
+/* index page style*/
+>>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
+#Track{
+	float: left;
+	height: 70px;
 }
 
 #Track input{
