@@ -151,7 +151,7 @@ header .user-au:hover{
 	color: #ffffff;
 }
 
-/*  frm*/
+/*  style for Sing in page*/
 
 #login-frm input, button{
 	display: block;
@@ -181,20 +181,30 @@ form #login-frm{
 	background-color: #606060;
 }
 #signup-frm h1{
-	margin-left: 125px;
+	margin-left: 20px;
 
 }
-#signup button, input {
+form #signup-frm input[type="text"]{
+	margin-left: 20; 
+}
+.container #signup-frm{
+
+	background: white;
+	width: 350px;
+}
+
+#signup button input {
 	display: block;
 	height: 35px;
 	margin-top: 10px;
 	width: 300px;
-	margin-left: 0;
-	margin-right: 50px;
+	margin-left: 20;
+	margin-right: 20px;
 
 }
 #signup {
 	float: right;
+	background-image: url('.images/home-page-bg.jpg')
 }
 /* index style*/
 #Track{
