@@ -21,10 +21,10 @@
 					<span class="user-au" id="login"><a href="login.html">Login</a></span>
 					<span class="user-au" id="signup"><a href="signup.html">Sign Up</a></span>
 			</div>
-		<div class="menu">
+		<div class="menu" id="home-mn">
 		 <ul>
 			<li><span class="current"><a href="Index.html">Home</a></span></li>
-			<li><span class="current"><a href="Index.html">About</a></span></li>
+			<li><span class="current"><a href="Index.html">Services</a></span></li>
 			<li><span class="current"><a href="Index.html">Contact</a></span></li>
 	     </ul>
 		</div>
@@ -38,15 +38,24 @@
 		<section id="intro">
 			<div class="welcome">
 				<h1>
+<<<<<<< HEAD
 					<p>
 						Welcome to the best parcels delivery Service in East Africa.   
 						We care about your courier security and we deliver it to the desired destination 	
 					</p>
+=======
+						Welcome to the Best parcels Delivery Service in East Africam
+		                We care about your courier security and We Deliver It To The Desired Destination 	
+					
+>>>>>>> #-162104037-improving UI and adding neccesaary information for User
 				</h1>
 			</div>
 				<aside>
 					<div id="geo_pic">
-                    here will be an image for geolocation 
+					here will be an image for geolocation !!!
+					here will be an image for geolocation !!!
+					here will be an image for geolocation !!!
+					here will be an image for geolocation !!!
 					</div>
 				</aside>
 		</section>
@@ -62,60 +71,61 @@
 	    </form>
 	</div>
 </section>
-<section>
-	<div class="container">
-		
-	</div>
-</section>
 <footer>
 	<div class="services">
 		<aside id="left">
 			<ul>
-				<p>About Us:</p>
-				<li>Our Company </li>
-				<li>Our Courier</li>
-				<li>Terms&Conditions</li>
-				<li>FAQs</li>
+				<h1><p>About Us:</p></h1>
+				<li><a href=""> Our Company</a> </li>
+				<li><a href="">Our Courier</a> </li>
+				<li><a href="">Terms&Conditions</a></li>
+				<li><a href="">FAQs</a> </li>
 			</ul>
 		</aside>
 		<aside id="right">
 			<ul>
-				<p>Deliver To...</p>
-				<li>Percel Deliver To kigali</li>
-				<li>Percel Deliver To Uganda</li>
-				<li>Percel Deliver To Kenya</li>
-				<li>Percel Deliver To Tanzania</li>
-				<li>Percel Deliver To Burundi</li>
-				<li>Percel Deliver To South Sudan</li>
+				<h1><p>Deliver To...</p></h1>
+				<li><a href="">Percel Deliver To kigali></a> </li>
+				<li><a href="">Percel Deliver To Uganda</a></li>
+				<li><a href="">Percel Deliver To Kenya</a></li>
+				<li><a href="">Percel Deliver To Tanzania</a></li>
+				<li><a href="">Percel Deliver To Burundi</a></li>
+				<li><a href="">Percel Deliver To South Sudan</a></li>
 			</ul>
 		</aside>
 	</div>
 	<div class="our-work">
 			<aside id="left">
 				<ul>
-					<p>Tools:</p>
-					<li>Get a Quote</li>
-					<li>Parcel Tracking</li>
-					<li>My Account</li>
-					<li>Postcode Finder</li>
-					<li>Volume Calculator</li>
-					<li>Item Advice</li>
+					<h1><p>Tools:</p></h1>
+					<li><a href="">Get a Quote</a> Get a Quote</li>
+					<li><a href="">Parcel Tracking</a></li>
+					<li><a href="">My Account</a></li>
+					<li><a href="">Postcode Finder</a></li>
+					<li><a href="">Volume Calculator</a></li>
+					<li><a href="">Item Advice</a></li>
 				</ul>
 			</aside>
 			<aside id="right">
 				<ul>
 					<p><h1>Follow Us:</h1></p>
 					<ul>
-						<li><img src="" /></li>
-						<li><img src="" /></li>
-						<li><img src="" /></li>
-						<li><img src="" /></li>
+						<li><img src="../images/Facebook_icon.png" /></li>
+						<li><img src="../images/Facebook_icon.png" /></li>
+						<li><img src="../images/Facebook_icon.png" /></li>
+						<li><img src="../images/Facebook_icon.png" /></li>
 					</ul>
-					
-				
-			</aside>
+				</aside>
 		</div>
 </footer>
+<script>
+function showPosition(position) {
+  const latlon = '${position.coords.latitude},${position.coords.longitude}';
 
+  const Url = 'https://maps.googleapis.com/maps/api/staticmap?center= ${latlon}&zoom=14&size=400x300&sensor=false&key=AIzaSyARnpVqWwririHxUD5sRSoi-Aee6-PmL50';
+
+document.getElementById('geo_pic').innerHTML = `<img src='${Url}'>`;
+}
+</script>
 </body>
 </html>
