@@ -319,10 +319,14 @@ float: left;
 	float: left;
 }
 /* dashb*/
+.form-dsb #dshb{
+
+	height: 380px;
+}
 .form-dsb form {
 	width: 70%;
 	background: #ffffff;
-	height: 300px;
+	height: 700px;
 	margin-left: 50px;
 	margin-top: 60px;
 	float: left;
@@ -407,7 +411,7 @@ float: left;
 }
 #header-info{
 	width: 800px;
-	margin-left: 100px;
+	margin-left: 50px;
 	
 }
 #header-info ul{
@@ -418,7 +422,7 @@ float: left;
 	float: left;
 	display: inline;
 	list-style: none;
-	padding-left: 20px;
+	padding-left: 10px;
 	height: 40px;
 	color: white;
 	width: 80px;
@@ -427,9 +431,25 @@ float: left;
 }
 .orders{
      width: 800px;
-     min-height: 100px;
+    min-height: 100px;
 	max-height: 300px;
 	background: white;
-	margin-left: 100px;
+	margin-left: 50px;
 	margin-top: 30px;
+}
+.orders table{
+
+	width: 800px;
+}
+
+.orders table tr{
+	height: 25px;
+	font-size: 15px;
+	background-color: #e48542;
+	border-width: 1px;
+}
+.orders table td{
+
+	border-spacing: 0;
+	border-width: 1px;
 }
