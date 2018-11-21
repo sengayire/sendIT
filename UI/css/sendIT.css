@@ -76,10 +76,14 @@ header li{
 	margin-left: 5px;
 	margin-right: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 125px;
 =======
 	width: 130px;
 >>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
+=======
+	width: 125px;
+>>>>>>> #-162104037-improving UI and adding neccesaary information for User
 	margin-top: 25px;
 	
 }
@@ -139,6 +143,28 @@ header .user-au:hover{
 	margin-top: 10px;
 	font-size: 30px;
 	margin-bottom: 0px;
+<<<<<<< HEAD
+}
+
+#showcase .container #intro .welcome{
+   width: 700px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#showcase .container #intro .geo_pic{
+	float: right;
+}
+#geo_pic{	
+	width: 400px;
+	float: right;
+	height: 600;
+	margin-right: 40px;
+	margin-top: 20px;
+	background-color: white;
+=======
+>>>>>>> #-162104037-improving UI and adding neccesaary information for User
 }
 
 #showcase .container #intro .welcome{
@@ -159,19 +185,10 @@ header .user-au:hover{
 	margin-top: 20px;
 	background-color: white;
 }
-.welcome{
-
-	width: 700px;
-	height: 300px;
-	float: left;
-}
-#geo_pic{
-	width: 200px;
-	float: right;
-}
 #newsletter{
 	padding: 15px;
 	color: #ffffff;
+<<<<<<< HEAD
 	background:#35425a;
 	height: 70px;
 
@@ -179,6 +196,9 @@ header .user-au:hover{
 
 	background:#f8cf99;
 
+=======
+	background:#f8cf99;
+>>>>>>> #-162104037-improving UI and adding neccesaary information for User
 	height: 80px;
 }
 #newsletter h1{
@@ -249,6 +269,7 @@ form #login-frm{
 .our-work {
 	float: right;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 700px;
 	margin-top: 0;
 	margin-right: 70px;
@@ -257,6 +278,11 @@ form #login-frm{
 	margin-top: 0;
 	margin-right: 100px;
 >>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
+=======
+	width: 700px;
+	margin-top: 0;
+	margin-right: 70px;
+>>>>>>> #-162104037-improving UI and adding neccesaary information for User
 }
 .our-work ul{
 	list-style: none;
@@ -292,10 +318,14 @@ float: left;
 	height: 420px;
 	margin-bottom: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-image: url(../images/SignUp.jpg);
 =======
 	background-image: url(../images/Sign.jpg);
 >>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
+=======
+	background-image: url(../images/SignUp.jpg);
+>>>>>>> #-162104037-improving UI and adding neccesaary information for User
 }
 #signup-frm h1{
 	margin-left: 125px;
