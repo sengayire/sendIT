@@ -75,15 +75,7 @@ header li{
 	display: inline;
 	margin-left: 5px;
 	margin-right: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	width: 125px;
-=======
-	width: 130px;
->>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
-=======
-	width: 125px;
->>>>>>> #-162104037-improving UI and adding neccesaary information for User
 	margin-top: 25px;
 	
 }
@@ -143,7 +135,6 @@ header .user-au:hover{
 	margin-top: 10px;
 	font-size: 30px;
 	margin-bottom: 0px;
-<<<<<<< HEAD
 }
 
 #showcase .container #intro .welcome{
@@ -163,32 +154,20 @@ header .user-au:hover{
 	margin-right: 40px;
 	margin-top: 20px;
 	background-color: white;
-=======
->>>>>>> #-162104037-improving UI and adding neccesaary information for User
 }
+.welcome{
 
-#showcase .container #intro .welcome{
-   width: 700px;
+	width: 700px;
+	height: 300px;
 	float: left;
-	margin-left: 50px;
-	margin-top: 20px;
 }
-
-#showcase .container #intro .geo_pic{
+#geo_pic{
+	width: 200px;
 	float: right;
-}
-#geo_pic{	
-	width: 400px;
-	float: right;
-	height: 600;
-	margin-right: 40px;
-	margin-top: 20px;
-	background-color: white;
 }
 #newsletter{
 	padding: 15px;
 	color: #ffffff;
-<<<<<<< HEAD
 	background:#35425a;
 	height: 70px;
 
@@ -196,9 +175,6 @@ header .user-au:hover{
 
 	background:#f8cf99;
 
-=======
-	background:#f8cf99;
->>>>>>> #-162104037-improving UI and adding neccesaary information for User
 	height: 80px;
 }
 #newsletter h1{
@@ -268,21 +244,9 @@ form #login-frm{
 }
 .our-work {
 	float: right;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	width: 700px;
 	margin-top: 0;
 	margin-right: 70px;
-=======
-	width: 600px;
-	margin-top: 0;
-	margin-right: 100px;
->>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
-=======
-	width: 700px;
-	margin-top: 0;
-	margin-right: 70px;
->>>>>>> #-162104037-improving UI and adding neccesaary information for User
 }
 .our-work ul{
 	list-style: none;
@@ -317,15 +281,7 @@ float: left;
 	width: 1300px;
 	height: 420px;
 	margin-bottom: 5px;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	background-image: url(../images/SignUp.jpg);
-=======
-	background-image: url(../images/Sign.jpg);
->>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
-=======
-	background-image: url(../images/SignUp.jpg);
->>>>>>> #-162104037-improving UI and adding neccesaary information for User
 }
 #signup-frm h1{
 	margin-left: 125px;
@@ -338,7 +294,6 @@ float: left;
 	width: 300px;
 	margin-left: 0;
 	margin-right: 50px;	
-<<<<<<< HEAD
 }
 #signup input{
 	background: #fffefece;
@@ -353,22 +308,6 @@ float: left;
 	border-color: transparent;
 	color: #FFFFFF;
 }
-=======
-}
-#signup input{
-	background: #fffefece;
-	border-radius: 4px;
-	border-color: #faa96fa9;
-	color: rgb(37, 36, 36);
-	
-}
-#signup button{
-	background: #e48542;
-	border-radius: 10px;
-	border-color: transparent;
-	color: #FFFFFF;
-}
->>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
 
 #signup  #right {
 	float: right;
@@ -376,7 +315,6 @@ float: left;
 	margin-right: 20px;
 	margin-top: 10px;
 }
-<<<<<<< HEAD
 /* index style*/
 
 #signup  #left {
@@ -392,20 +330,6 @@ float: left;
 /* index page style*/
 #Track{
 	float: left;
-=======
-#signup  #left {
-	float: left;
-	width: 800px;
-	margin-top: 60px;
-	font-family: -apple-system, BlinkMacSystemFont;
-	vertical-align: middle;
-	font-size: 35px;
-	margin-left: 20px;
-}
-/* index page style*/
-#Track{
-	float: left;
->>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
 	height: 70px;
 }
 
