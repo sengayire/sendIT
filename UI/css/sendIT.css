@@ -158,17 +158,14 @@ header .user-au:hover{
 #newsletter{
 	padding: 15px;
 	color: #ffffff;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	background:#35425a;
 	height: 70px;
-=======
+
 	background:#f8d7ac;
-=======
+
 	background:#f8cf99;
->>>>>>> #-162104037-improving UI and adding neccesaary information for User
+
 	height: 80px;
->>>>>>> [feature #162079395] improving a home page design by adding neccesary links to direct a visitor
 }
 #newsletter h1{
 	float: left;
@@ -186,22 +183,8 @@ header .user-au:hover{
 	width: 250px;
 	border-radius: 5px;
 }
-<<<<<<< HEAD
-/* index style*/
-#track{
-		 height: 50px;
-		 float: left;
-}
-#track button{
-   float: left;
-   margin-left: 30px;
-}
-.button_1{
-	height: 38px;
-=======
 #newsletter .button_1{
 	height: 35px;
->>>>>>> [feature #162079395] improving a home page design by adding neccesary links to direct a visitor
 	background:#e48542;
 	border: 0;
 	border-radius: 8px;
@@ -322,22 +305,19 @@ float: left;
 	margin-right: 20px;
 	margin-top: 10px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 /* index style*/
-=======
+
 #signup  #left {
 	float: left;
 	width: 800px;
 	margin-top: 60px;
 	font-family: -apple-system, BlinkMacSystemFont;
 	vertical-align: middle;
-	font-size: 35px;
+	color: #FFFFFF;
+	font-size: 47px;
 	margin-left: 20px;
 }
 /* index page style*/
->>>>>>> #162104037-improving the design of sign-in page and home page by styling it in proper way
 #Track{
 	float: left;
 	height: 70px;
@@ -347,7 +327,6 @@ float: left;
 
 	float: left;
 }
->>>>>>> [feature #162079395] improving a home page design by adding neccesary links to direct a visitor
 /* dashb*/
 .form-dsb form {
 	width: 70%;
