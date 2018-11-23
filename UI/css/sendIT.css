@@ -204,7 +204,7 @@ header .user-au:hover{
 	width: 150px;
 }
 
-/*  frm*/
+/*  login form stules */
 
 #login-frm input, button{
 	display: block;
@@ -214,12 +214,34 @@ header .user-au:hover{
 	margin-left: 25px;
 
 }
+#login-frm .frm-container input{
+	background: #fffefece;
+	border-radius: 4px;
+	border-color: #faa96fa9;
+	color: rgb(37, 36, 36);
+}
+.form-sct .container{
 
+	height: 1000px;
+	width: 100%;
+	background-image: url(../images/SignUp.jpg)
+}
 form #login-frm{
     	max-height: 500px;
 }
+.orders-table table tr input{
+	width: 60px;
+	margin-right: 1px;
+	height: 20px;
+	text-align: center
+}
+.orders-table table{
+	width: 60px;
+	margin-right: 1px;
+	text-align: center;
+}
 .frm-container{
-	background-color: #e48542;
+	background-color: #d1b49f8e;
 	width: 350px;
 	position: center;
 	margin-left: 400px;
@@ -228,7 +250,7 @@ form #login-frm{
 	border-top: inset;
 }
 .frm-container .button_1{
-	background-color: #606060;
+	background-color: #e48542;
 }
 /* Styling footer*/
 .services{
@@ -338,6 +360,10 @@ float: left;
 	float: left;
 }
 /* dashb*/
+.form-dsb #dshb{
+	height: 100%;
+	width: 100%;
+}
 .form-dsb form {
 	width: 70%;
 	background: #ffffff;
