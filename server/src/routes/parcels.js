@@ -1,25 +1,16 @@
 import express from 'express';
 import uuid from 'uuid/v1';
+import parcels from '../data/parcels';
+import execute from '../database/database';
 
 const router = express.Router();
-
-let parcels = [
-  {
-    id: '3434-5656-5656-5667',
-    from: 'huye',
-    sender: 'prince',
-    destination: 'kigali',
-    riciever: 'mutabazi',
-    status: 'delivered'
-  },
-];
 
 // adding a parcel
 router.post('/', (req, res) => {
   const { body } = req;
 
   if (!body.from || !body.receiver || !body.destination) {
-    res.status(401).send({ message: 'Please provide all details' });
+    res.status(400).send({ message: 'Please provide all details' });
   }
   const parcel = {
     id: uuid(),
@@ -27,13 +18,14 @@ router.post('/', (req, res) => {
     sender: body.sender,
     destination: body.destination,
     riceiver: body.receiver,
+    userId: body.userId,
   };
-  parcels = [...parcels, parcel];
+  parcels.push(parcel);
 
   res.status(200).send({ parcel });
 });
 
-// add parcels using put
+// update parcel
 router.put('/', (req, res) => {
   const { body } = req;
   if (!body.from || !body.receiver || !body.destination) {
@@ -45,15 +37,17 @@ router.put('/', (req, res) => {
     sender: body.sender,
     destination: body.sender,
     receiver: body.receiver,
+    userId: body.userId,
   };
 
-  parcels = [...parcels, parcel];
+  parcels.push(parcel);
 
-  res.status(200).send({ parcel });
+  res.status(200).send({ essage: ' details mising!!!',
+  parcel });
 });
 
 // get all available parcels
-router.get('/', (req, res) => {
+router.get('/', (_req, res) => {
   res.status(200).send(parcels);
 });
 
@@ -70,18 +64,17 @@ router.get('/:id', (req, res) => {
   });
 });
 
-// deleting a parcel
-router.delete('/:id', (req, res) => {
+// cancel a parcel
+router.put('/:id/cancel', (req, res) => {
   const { id } = req.params;
   const parcel = parcels.find(value => value.id === id);
 
   if (!parcel) {
     res.status(404).send({ message: 'Not found!!!' });
   }
-  parcels = parcels.filter(value => value.id !== id);
-
   res.status(200).send({
     message: 'parcel deleted successfull',
+    items,
   });
 });
 
@@ -91,4 +84,7 @@ router.delete('/', (req, res) => {
     message: ' all parcels has been deleted',
   });
 });
-export default router;
+
+
+
+export default router
