@@ -9,20 +9,21 @@ body{
 }
 .container{
 
-	width:90%;
-	margin-left: 40px;
+	width:100%;
+	margin-left: 0px;
 	overflow: hidden;
+	height: 70px;
 }
 header #logo img{
-    max-width: 150px;
-    max-height: 150px;
-    padding-top: 0;
-    padding-bottom: 0;
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 5px;
+    padding-left: 30px;
     float: left;
 	}
 	#sendit{
-		margin-top: 40px;
-		font-size: 17px;
+		margin-top: 7px;
+		font-size: 15px;
 	}
 	#it{
 
@@ -34,15 +35,20 @@ header #logo img{
 
 	}
 	.menu{
-
-		margin-top: 50px;
-		margin-right: 200px;
+		margin-right: 350px;
+		display: inline;
+		width: 500px;
 	}
+.menu #home-mn{
+		margin-left: 150px;
+		display: inline;
+		width: 1000px;
+	}	
 header{
 	background: #FFFFFF;
 	color: #ffffff;
-	padding-top:10px;
-	min-height:45px;
+	padding-top:0px;
+	height:70px;
 	border-bottom:#e8451d 3px solid;
 }
 header a{
@@ -65,15 +71,16 @@ header li{
 
 }
  .user{
-
 	float: right;
-	margin-left: 400px;
+	display: inline;
+	margin-left: 5px;
 	margin-right: 0;
+	width: 125px;
+	margin-top: 25px;
+	
 }
   .user a{
-  	padding-left: 10px;
-  	padding-right: 10px;
-  	
+  	margin-right: 5px;
   }
 header #branding{
 	float: left;
@@ -113,63 +120,138 @@ header .user-au:hover{
 	color: #cccccc;
 }
 #showcase{
-	min-height: 300px;
+	
 	background: url() no-repeat;
 
 }
-#showcase h1{
-	margin-top: 30px;
-	font-size: 55px;
-	margin-bottom: 25px;
+#showcase .container{
+	width: 100%;
+	min-height: 300px;
+	margin-left: 30px;
+	background-image: url(../images/SignUp.jpg);
+	background-repeat: none;
 }
-#showcase p{
-	font-size: 30px;
+#showcase h1{
+	margin-top: 10px;
+	font-size: 40px;
+	margin-bottom: 0px;
+}
+
+#showcase .container #intro .welcome{
+   width: 700px;
+	float: left;
+	margin-left: 200px;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+#showcase .container #intro .geo_pic{
+	float: right;
+}
+#geo_pic{	
+	width: 100px;
+	float: right;
+	height: 600;
+	margin-right: 2px;
+	margin-top: 20px;
+}
+.welcome{
+
+	width: 700px;
+	height: 300px;
+	float: left;
+}
+#geo_pic{
+	width: 200px;
+	float: right;
 }
 #newsletter{
 	padding: 15px;
 	color: #ffffff;
 	background:#35425a;
+	height: 70px;
+
+	background:#f8d7ac;
+
+	background:#f8cf99;
+
+	height: 80px;
 }
 #newsletter h1{
 	float: left;
+	margin-left: 300px;
+	margin-bottom: 200px;
 }
 #newsletter form{
 	float: right;
-	margin-top: 10px;
+	margin-top: 20px;
+	margin-right: 50px;
 }
-#newsletter input[type="email"]{
+#newsletter input[type="text"]{
 	padding: 4px;
 	height: 25px;
 	width: 250px;
+	border-radius: 5px;
 }
-.button_1{
-	height: 38px;
+#newsletter .button_1{
+	height: 35px;
 	background:#e48542;
 	border: 0;
-	padding-right: 20px;
+	border-radius: 8px;
+	margin-right: 10px;
 	padding-left: 20px;
 	color: #ffffff;
+	width: 150px;
 }
 
-/*  frm*/
+/*  login form stules */
 
 #login-frm input, button{
 	display: block;
 	height: 35px;
-	margin-top: 10px;
+	margin-top: 6px;
 	width: 300px;
 	margin-left: 25px;
+	border-radius: 10px;
 
 }
-
-form #login-frm{
-       
+#login-frm h1{
 	
-	max-height: 500px;
+color:white;
+}
+#login-frm .frm-container input{
+	background: #fffefece;
+	
+	border-color: #faa96fa9;
+	color: rgb(37, 36, 36);
+
+}
+.form-sct .container{
+
+	height: 1000px;
+	width: 100%;
+	background-image: url(../images/SignUp.jpg)
+}
+form #login-frm{
+    	max-height: 500px;
+}
+.orders-table table tr input{
+	width: 60px;
+	margin-right: 1px;
+	height: 30px;
+	text-align: center;
+	background-color: #e48542;
+	color: white;
+	
+}
+.orders-table table{
+	width: 60px;
+	margin-right: 1px;
+	text-align: center;
 	
 }
 .frm-container{
-	background-color: #e48542;
+	background-color: #d1b49f8e;
 	width: 350px;
 	position: center;
 	margin-left: 400px;
@@ -178,7 +260,66 @@ form #login-frm{
 	border-top: inset;
 }
 .frm-container .button_1{
-	background-color: #606060;
+	background-color: #e48542;
+	color: white;
+}
+#get button{
+
+	background-color: #e48542;
+	color: #FFFFFF;
+}
+/* Styling footer*/
+.services{
+
+	float: left;
+	margin-left: 10px;
+	width: 400px;
+	margin-top: 5px;
+
+}
+.services ul{
+	list-style: none;
+}
+.our-work {
+	float: right;
+	width: 700px;
+	margin-top: 0;
+	margin-right: 70px;
+}
+.our-work ul{
+	list-style: none;
+}
+.services #left{
+ float: left;
+}
+.services #right{
+	float: right;
+}
+.our-work #left{
+float: left;
+}
+.our-work #right{
+ float: right;
+ margin-right: 5px;
+}
+.our-work #right ul li img{
+	height: 80px;
+	width: 80px;
+	display: inline;
+   }
+   .our-work #right ul li{
+	display: inline;
+   }
+/*styling sign-up Page*/
+.container  #signup-body{
+	margin-left: 0%;
+}
+ #signup-body{
+
+	width: 1300px;
+	height: 420px;
+	margin-bottom: 5px;
+	background-image: url(../images/SignUp.jpg);
 }
 #signup-frm h1{
 	margin-left: 125px;
@@ -190,24 +331,55 @@ form #login-frm{
 	margin-top: 10px;
 	width: 300px;
 	margin-left: 0;
-	margin-right: 50px;
-
+	margin-right: 50px;	
 }
-#signup {
+#signup input{
+	background: #fffefece;
+	border-radius: 4px;
+	border-color: #faa96fa9;
+	color: rgb(37, 36, 36);
+	
+}
+#signup button{
+	background: #e48542;
+	border-radius: 10px;
+	border-color: transparent;
+	color: #FFFFFF;
+}
+
+#signup  #right {
 	float: right;
+	width: 400px;
+	margin-right: 20px;
+	margin-top: 10px;
 }
 /* index style*/
-#Track{
 
+#signup  #left {
 	float: left;
-	height: 30px;;
+	width: 800px;
+	margin-top: 60px;
+	font-family: -apple-system, BlinkMacSystemFont;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-size: 47px;
+	margin-left: 20px;
+}
+/* index page style*/
+#Track{
+	float: left;
+	height: 70px;
 }
 
-#Track.input{
+#Track input{
 
 	float: left;
 }
 /* dashb*/
+.form-dsb #dshb{
+	height: 100%;
+	width: 100%;
+}
 .form-dsb form {
 	width: 70%;
 	background: #ffffff;
@@ -314,11 +486,27 @@ form #login-frm{
 	padding-top: 15px;
 	font-weight: bold;
 }
-.orders{
+.orders-table{
      width: 800px;
-     min-height: 100px;
+    min-height: 300px;
 	max-height: 300px;
 	background: white;
 	margin-left: 100px;
 	margin-top: 30px;
+	float: left;
+}
+
+.orders-table table tr{
+	background-color: #f8a971b0;
+	height: 30px;
+}
+.orders-table table{
+	width: 800px;
+}
+#admin-action{
+	float: right;
+	margin-right: 50px;
+	height: 50px;
+	width: 100px;
+	background-color: #FFFFFF;
 }
