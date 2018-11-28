@@ -40,16 +40,16 @@ For a better test you should  use [POSTMAN]
 * Install [Node js](https://nodejs.org/en/)
 * install eslint with airBnb 
 
-if you need this app source codes on your local machine clone it on your local repository by using the following command in your git bash terminal:
+If you need this app source codes on your local machine clone it on your local repository by using the following command in your git bash terminal:
 
 ```
 $ git clone 
 ```
 
-you will find a folder named sendIT in your local machine 
+You will find a folder named sendIT in your local machine 
 
 ```
-you will need to install dependincies as in your local package.json file by using the following command:
+You will need to install dependincies as in your local package.json file by using the following command:
 
 ```
 $ npm install
@@ -58,7 +58,7 @@ To start the server use the following command
 ```
 $ npm start or npm run dev
 ```
-write the following command to run the test do
+Write the following command to run the test do
 
 ```
 $ npm test
@@ -72,8 +72,8 @@ $ eslint main.js
 SENGAYIRE Prince
 
 ### License
-this project is linsenced under the candidate of  Andela BootCamp kigali cycle 1
+This project is linsenced under the candidate of  Andela BootCamp kigali cycle 1
 
 ### Acknowledgments
-i acknowled Charles Odile, OlivierEsuka  and all the candidate of Andela Bootcamp kigali Cycle 1 for thier help during the development of this App.
+I acknowled Charles Odile, OlivierEsuka  and all the candidate of Andela Bootcamp kigali Cycle 1 for thier help during the development of this App.
 
