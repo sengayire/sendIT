@@ -1,18 +1,10 @@
 import express from 'express';
 import uuid from 'uuid/v1';
+import users from '../data/users';
 
 const router = express.Router();
 
-const users = [
-  {
-    id: '3434-5656-5656-5667',
-    firstname: ' prince',
-    midlename: 'gikundiro',
-    lastname: 'sengayire',
-    email: ' psengayire@gmail.com',
-    password: '',
-  },
-];
+
 // creating  User
 router.post('/', (req, res) => {
   const { body } = req;
@@ -25,13 +17,13 @@ router.post('/', (req, res) => {
     name: body.name,
     email: body.email,
   };
-  users = [...users, user];
+  users.push(user);
 
   res.status(200).send({ user });
 });
-// get all available parcels
+// get all users
 router.get('/', (req, res) => {
   res.status(200).send(users);
 });
 
-export default users;
+export default router;

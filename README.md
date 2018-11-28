@@ -1,8 +1,69 @@
-# sendIT
+# sendIT V1
 Parcel deivery Service
 SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
 provides courier quotes based on weight categories.
 
+i have added this app on Github pages for someone who want to look how it work must foolow it via this link
 
-#The user gets real-time email notification when an changes has been made to the status of their parcel.
+these are  all API Endpoints that will be used in the app:
+* **POST/parcels** Create a parcel delivery order
+* **GET/parcels** get all parcel delivery orders
+* **GET/parcels/:parcelid** get specific parcel delivery order by id
+* **GET/users/:userid/parcels** get all parcel delivery order for a specific user
+* **PUT/parcels/:parcelid/cancel** Cancel a specific parcel delivery order
+**PUT/parcels/:parcelid/update** update destination of specific parcel 
+* **GET/users** get all users
+* **GET/users/:userid** get specific user by id
+* **POST/users** Create a user
 
+# Technology Tools used
+* programing language: **javascript ES6** with **Babel** transpiler
+* Server-side Framework: **Node/Express JS**
+* Linting Library: **ESlint**
+* Style Guide: **Airbnb**
+* Testing Framework: **Mocha** with **Chai**
+
+# Additional Tools
+* TravisCI for Continous Integration
+* Istanbul and nyc for test coverage
+* CodeClimate and Coveralls for badges
+* Heroku for app Deployment 
+
+This is the  url link of the app on heroku 
+
+
+For a better test you should  use [POSTMAN]
+
+# Setup Instruction
+* Install [git](https://git-scm.com/downloads)
+* Install [Node js](https://nodejs.org/en/)
+* install eslint with airBnb 
+
+if you need this app source codes on your local machine clone it on your local repository by using the following command in your git bash terminal:
+
+```
+$ git clone 
+```
+
+you will find a folder named sendIT in your local machine 
+
+```
+you will need to install dependincies as in your local package.json file by using the following command:
+
+```
+$ npm install
+```
+To start the server use the following command
+```
+$ npm start or npm run dev
+```
+write the following command to run the test do
+
+```
+$ npm test
+```
+For eslint test do eslint file_name. For example this will test app.js
+
+```
+$ eslint app.js
+```

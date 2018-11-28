@@ -1,21 +1,19 @@
 import express from 'express';
 import uuid from 'uuid/v1';
+import { celebrate, Joi } from 'celebrate';
+import parcels from '../data/parcels';
 
 const router = express.Router();
 
-let parcels = [
-  {
-    id: '3434-5656-5656-5667',
-    from: 'huye',
-    sender: 'prince',
-    destination: 'kigali',
-    riciever: 'mutabazi',
-    status: 'delivered'
-  },
-];
 
 // adding a parcel
-router.post('/', (req, res) => {
+router.post('/', celebrate({
+  body: Joi.object().keys({
+    from: Joi.string().required().trim(),
+    receiver: Joi.string().required().trim(),
+    destination: Joi.string().required().trim(),
+  }),
+}), (req, res) => {
   const { body } = req;
 
   if (!body.from || !body.receiver || !body.destination) {
@@ -28,29 +26,11 @@ router.post('/', (req, res) => {
     destination: body.destination,
     riceiver: body.receiver,
   };
-  parcels = [...parcels, parcel];
+  parcels.push(parcel);
 
-  res.status(200).send({ parcel });
+  res.status(200).send(parcel);
 });
 
-// add parcels using put
-router.put('/', (req, res) => {
-  const { body } = req;
-  if (!body.from || !body.receiver || !body.destination) {
-    res.status(404).send({ message: ' details mising!!!' });
-  }
-  const parcel = {
-    id: uuid(),
-    from: body.from,
-    sender: body.sender,
-    destination: body.sender,
-    receiver: body.receiver,
-  };
-
-  parcels = [...parcels, parcel];
-
-  res.status(200).send({ parcel });
-});
 
 // get all available parcels
 router.get('/', (req, res) => {
@@ -70,25 +50,39 @@ router.get('/:id', (req, res) => {
   });
 });
 
-// deleting a parcel
-router.delete('/:id', (req, res) => {
-  const { id } = req.params;
-  const parcel = parcels.find(value => value.id === id);
-
-  if (!parcel) {
-    res.status(404).send({ message: 'Not found!!!' });
+// canceling a parcel
+router.put('/:id/cancel', (req, res) => {
+  const { id } = req.params.body;
+  const parcel = parcels.find(value => id.id === value.id);
+  const index = parcels.indexOf(parcel);
+  if (!index) {
+    res.status(404).send({ message: 'Parcel Not found!!!' });
   }
-  parcels = parcels.filter(value => value.id !== id);
-
+  if (parcels[index].status === 'cancelled') {
+    res.status(404).send({ message: 'Parcel has already been cancelled!!!' });
+  }
+  const items = parcels.filter(value => value.id === id);
+  parcels[index].status = 'cancelled';
   res.status(200).send({
-    message: 'parcel deleted successfull',
+    message: 'Parcel has been canceled successfull',
+    items,
   });
 });
 
-// deleting all parcel
-router.delete('/', (req, res) => {
-  res.status(200).send({
-    message: ' all parcels has been deleted',
-  });
+
+// update a parcel
+router.put('/update/:id', (req, res) => {
+  const { parcelid } = req.params;
+  const parcel = parcels.find(value => value.id === id);
+  const index = parcels.indexOf(parcel);
+  if (!index) {
+    return res.status(404).send({ message: 'parcel not found!!!' });
+  }
+  parcels[index].id = parcelid.id;
+  parcels[index].from = parcelid.form;
+  parcels[index].destination = parcelid.destination;
+  parcels[index].weight = parcelid.weight;
+  const updated = parcels[index];
+  return res.status(200).send(updated);
 });
 export default router;
