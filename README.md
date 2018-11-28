@@ -75,5 +75,5 @@ SENGAYIRE Prince
 this project is linsenced under the candidate of  Andela BootCamp kigali cycle 1
 
 ### Acknowledgments
-i acknowled Charles Odile Olivier Esuka and all the candidate of Andela Bootcamp kigali Cycle 1 for thier help during the development of this App.
+i acknowled Charles Odile, OlivierEsuka  and all the candidate of Andela Bootcamp kigali Cycle 1 for thier help during the development of this App.
 
