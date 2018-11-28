@@ -2,7 +2,7 @@
 Parcel deivery Service
 SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
 provides courier quotes based on weight categories.
-#The user gets real-time email notification when an changes has been made to the status of their parcel.
+The user gets real-time email notification when an changes has been made to the status of their parcel.
 
 i have added this app on Github pages for someone who want to look how it work must foolow it via this link
 
@@ -68,12 +68,12 @@ For eslint test do eslint file_name. For example this will test main.js
 ```
 $ eslint main.js
 ```
-# Authors
-* SENGAYIRE Prince
+### Setup Instruction
+SENGAYIRE Prince
 
-# License
+### License
 this project is linsenced under the candidate of  Andela BootCamp kigali cycle 1
 
-# Acknowledgments
+### Acknowledgments
 i acknowled Charles Odile Olivier Esuka and all the candidate of Andela Bootcamp kigali Cycle 1 for thier help during the development of this App.
 
