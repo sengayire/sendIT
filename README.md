@@ -68,12 +68,12 @@ For eslint test do eslint file_name. For example this will test main.js
 ```
 $ eslint main.js
 ```
-### Authors
-** SENGAYIRE Prince **
+# Authors
+* SENGAYIRE Prince
 
-### License
+# License
 this project is linsenced under the candidate of  Andela BootCamp kigali cycle 1
 
-### Acknowledgments
+# Acknowledgments
 i acknowled Charles Odile Olivier Esuka and all the candidate of Andela Bootcamp kigali Cycle 1 for thier help during the development of this App.
 
