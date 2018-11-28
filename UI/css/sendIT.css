@@ -128,32 +128,32 @@ header .user-au:hover{
 	width: 100%;
 	min-height: 300px;
 	margin-left: 30px;
-	background-image: url(../images/Sign.jpg);
+	background-image: url(../images/SignUp.jpg);
 	background-repeat: none;
 }
 #showcase h1{
 	margin-top: 10px;
-	font-size: 30px;
+	font-size: 40px;
 	margin-bottom: 0px;
 }
 
 #showcase .container #intro .welcome{
    width: 700px;
 	float: left;
-	margin-left: 50px;
+	margin-left: 200px;
 	margin-top: 20px;
+	color: #FFFFFF;
 }
 
 #showcase .container #intro .geo_pic{
 	float: right;
 }
 #geo_pic{	
-	width: 400px;
+	width: 100px;
 	float: right;
 	height: 600;
-	margin-right: 40px;
+	margin-right: 2px;
 	margin-top: 20px;
-	background-color: white;
 }
 .welcome{
 
@@ -204,22 +204,54 @@ header .user-au:hover{
 	width: 150px;
 }
 
-/*  frm*/
+/*  login form stules */
 
 #login-frm input, button{
 	display: block;
 	height: 35px;
-	margin-top: 10px;
+	margin-top: 6px;
 	width: 300px;
 	margin-left: 25px;
+	border-radius: 10px;
 
 }
+#login-frm h1{
+	
+color:white;
+}
+#login-frm .frm-container input{
+	background: #fffefece;
+	
+	border-color: #faa96fa9;
+	color: rgb(37, 36, 36);
 
+}
+.form-sct .container{
+
+	height: 1000px;
+	width: 100%;
+	background-image: url(../images/SignUp.jpg)
+}
 form #login-frm{
     	max-height: 500px;
 }
-.frm-container{
+.orders-table table tr input{
+	width: 60px;
+	margin-right: 1px;
+	height: 30px;
+	text-align: center;
 	background-color: #e48542;
+	color: white;
+	
+}
+.orders-table table{
+	width: 60px;
+	margin-right: 1px;
+	text-align: center;
+	
+}
+.frm-container{
+	background-color: #d1b49f8e;
 	width: 350px;
 	position: center;
 	margin-left: 400px;
@@ -228,7 +260,13 @@ form #login-frm{
 	border-top: inset;
 }
 .frm-container .button_1{
-	background-color: #606060;
+	background-color: #e48542;
+	color: white;
+}
+#get button{
+
+	background-color: #e48542;
+	color: #FFFFFF;
 }
 /* Styling footer*/
 .services{
@@ -338,6 +376,10 @@ float: left;
 	float: left;
 }
 /* dashb*/
+.form-dsb #dshb{
+	height: 100%;
+	width: 100%;
+}
 .form-dsb form {
 	width: 70%;
 	background: #ffffff;

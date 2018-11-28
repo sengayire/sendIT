@@ -1,22 +1,25 @@
 
 import express from 'express';
-import parcels from './routes/parcels';
-// import users from './routes/users';
+import parcelsController from './controllers/parcels';
+import usersContoller from './controllers/users';
 
 const server = express();
 
 
 server.use(express.json());
-server.use(express.urlencoded({ extends: false }));
+server.use(express.urlencoded( { extended: false 
+}));
 
 // fetching parcels
 server.use('/api/v1/parcels', parcels);
 
-// fetching Users
-// server.use('/api/v1/parcels', users);
+// fetching Users 
+server.use('/api/v1/users', users);
 
-// assining a port
+
+// assining a port for runing node
 const port = 3000;
+
 
 server.listen(port, () => {
   console.log(`Server listening on port: ${port}`);
