@@ -67,7 +67,7 @@ For eslint test do eslint file_name. For example this will test main.js
 
 ```
 $ eslint main.js
-```
+
 ### Setup Instruction
 SENGAYIRE Prince
 
