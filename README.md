@@ -68,4 +68,5 @@ For eslint test do eslint file_name. For example this will test main.js
 ```
 $ eslint main.js
 ```
-
+**Authors**
+* SENGAYIRE Prince
