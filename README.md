@@ -12,7 +12,7 @@ these are  all API Endpoints that will be used in the app:
 * **GET/parcels/:parcelid** get specific parcel delivery order by id
 * **GET/users/:userid/parcels** get all parcel delivery order for a specific user
 * **PUT/parcels/:parcelid/cancel** Cancel a specific parcel delivery order
-**PUT/parcels/:parcelid/update** update destination of specific parcel 
+* **PUT/parcels/:parcelid/update** update destination of specific parcel 
 * **GET/users** get all users
 * **GET/users/:userid** get specific user by id
 * **POST/users** Create a user
@@ -68,5 +68,12 @@ For eslint test do eslint file_name. For example this will test main.js
 ```
 $ eslint main.js
 ```
-**Authors**
-* SENGAYIRE Prince
+### Authors
+** SENGAYIRE Prince **
+
+### License
+this project is linsenced under the candidate of  Andela BootCamp kigali cycle 1
+
+### Acknowledgments
+i acknowled Charles Odile Olivier Esuka and all the candidate of Andela Bootcamp kigali Cycle 1 for thier help during the development of this App.
+
