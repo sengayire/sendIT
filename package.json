@@ -8,7 +8,7 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "test": "nyc mocha --require babel-polyfill --require babel-register --exec babel-node  server/test --exit",
     "dev": "node --exec babel-node server/src/main.js",
-    "start": "node --exec babel-node server/src/main.js"
+    "start": "node server/dist/main.js"
   },
   "author": "sengayire prince",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -27,7 +28,6 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "celebrate": "^9.0.1",
     "chai": "^4.2.0",
