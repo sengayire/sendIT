@@ -6,13 +6,14 @@
   "scripts": {
     "build": "babel server/src --out-dir server/dist",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "test": "nyc mocha --require babel-polyfill --require babel-register --exec babel-node  server/test --exit",
+    "test": "nyc mocha --require babel-polyfill --require babel-register --exec babel-node  ./test/testParcels.js --exit",
     "dev": "nodemon --exec babel-node server/src/main.js",
     "start": "babel-node server/src/main.js"
   },
   "author": "sengayire prince",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
