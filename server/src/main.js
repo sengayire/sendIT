@@ -18,7 +18,7 @@ server.use('/api/v1/users', usersRouter);
 
 
 // assining a port for runing node
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 server.listen(port, () => {
