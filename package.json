@@ -7,8 +7,8 @@
     "build": "babel server/src --out-dir server/dist",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "test": "nyc mocha --require babel-polyfill --require babel-register --exec babel-node  server/test --exit",
-    "dev": "nodemon --exec babel-node server/src/main.js",
-    "start": "nodemon --exec babel-node server/src/main.js"
+    "dev": "node --exec babel-node server/src/main.js",
+    "start": "node --exec babel-node server/src/main.js"
   },
   "author": "sengayire prince",
   "license": "ISC",
