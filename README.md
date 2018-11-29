@@ -62,8 +62,8 @@ write the following command to run the test do
 ```
 $ npm test
 ```
-For eslint test do eslint file_name. For example this will test app.js
+For eslint test do eslint file_name. For example this will test main.js
 
 ```
-$ eslint app.js
+$ eslint main.js
 ```
