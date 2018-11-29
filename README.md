@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/sengayire/sendIT.svg?branch=develop)](https://travis-ci.com/sengayire/sendIT)
 # sendIT(V1.0)
 Parcel deivery Service
 SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
