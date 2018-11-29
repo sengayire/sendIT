@@ -1,24 +1,28 @@
 
 import express from 'express';
-import parcelsController from './controllers/parcels';
-import usersContoller from './controllers/users';
+import parcelsRouter from './routes/parcels';
+import usersRouter from './routes/users';
+import 'babel-polyfill';
 
 const server = express();
 
 
 server.use(express.json());
-server.use(express.urlencoded( { extended: false 
-}));
+server.use(express.urlencoded({ extended: false }));
+
+server.get('/', (req, res) => {
+  res.status(200).send('Welcome to my API');
+});
 
 // fetching parcels
-server.use('/api/v1/parcels', parcels);
+server.use('/api/v1/parcels', parcelsRouter);
 
-// fetching Users 
-server.use('/api/v1/users', users);
+// fetching Users
+server.use('/api/v1/users', usersRouter);
 
 
 // assining a port for runing node
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 server.listen(port, () => {
