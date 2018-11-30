@@ -40,8 +40,14 @@ class ParcelsController {
     res.status(201).send({
       Message: 'Parcel created successfully!',
       Parcel: {
-        id: uuid(),
-        weight: 23,
+        id,
+        origin,
+        destination,
+        userId,
+        createdDate,
+        presentLocation,
+        price,
+        weight,
       },
     });
   }

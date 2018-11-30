@@ -19,7 +19,7 @@ class queries {
 
   // inserting manuely data into database
   static insert(data = []) {
-    execute(`INSERT INTO parcels (id, origin, destination, user_id, created_date, price, present_location, weight)
+    return execute(`INSERT INTO parcels (id, origin, destination, user_id, created_date, price, present_location, weight)
   VALUES($1,$2,$3,$4,$5,$6,$7,$8)`, data);
   }
 
