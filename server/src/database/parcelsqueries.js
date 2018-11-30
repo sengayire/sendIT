@@ -1,4 +1,4 @@
-import uuid from 'uuid';
+// import uuid from 'uuid';
 import execute from './database';
 import 'dotenv/config';
 
@@ -28,5 +28,4 @@ class queries {
     execute('SELECT * FROM parcels ORDER BY id ASC');
   }
 }
-
 export default queries;

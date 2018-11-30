@@ -38,5 +38,30 @@ class UsersContollers {
       items,
     });
   }
+
+  // sign in
+  static userSignIn(req, res) {
+    const { email, password } = req.body;
+    const User = users.find(user => user.email === email && user.password === password);
+    if (!User) {
+      return res.status(404).send({ message: 'user not found!!!' });
+    }
+    const index = users.indexOf(User);
+    users[index].loggedIn = true;
+    const userOn = users[index];
+    return res.status(200).send(userOn);
+  }
+
+  // log out
+  static logout(req, res) {
+    const User = users.find(user => user.isloggedin === true);
+    if (!User) {
+      return res.status(404).send({ message: ' u are not logged in' });
+    }
+    const index = users.indexOf(User);
+    users[index].loggedIn = false;
+    const userOff = users[index];
+    return res.status(200).send(userOff);
+  }
 }
 export default UsersContollers;

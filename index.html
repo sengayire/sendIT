@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>SendIT | Percel Delivery</title>
+	<link rel="stylesheet" type="text/css" href="UI/css/SendIT.css"/>
+	<link rel="icon" type="image/png" href="UI/images/logo.png" />
+</head>
+<body>
+<header>
+	<div  class="container">
+		<div id="branding">
+			<span id="logo"><img src="UI/images/logo.png"></span>
+		<div id="sendit"><h1><pan class="highlight">Send</pan><span id="it">IT</span></h1></div>	
+			
+		</div>
+			<div class="user">
+					<span class="user-au" id="login"><a href="html/login.html">Login</a></span>
+					<span class="user-au" id="signup"><a href="signup.html">Sign Up</a></span>
+			</div>
+	</nav>
+	</div>
+</header>
+<section id="showcase">
+	<div class="container">
+				<h1>
+					<p>
+						Welcome to the best parcels delivery Service in East Africa.   
+						We care about your courier security and we deliver it to the desired destination 	
+					</p>
+				</h1>
+	</div>
+</section>
+<script>
+function showPosition(position) {
+  const latlon = '${position.coords.latitude},${position.coords.longitude}';
+
+  const Url = 'https://maps.googleapis.com/maps/api/staticmap?center= ${latlon}&zoom=14&size=400x300&sensor=false&key=AIzaSyARnpVqWwririHxUD5sRSoi-Aee6-PmL50';
+
+document.getElementById('geo_pic').innerHTML = `<img src='${Url}'>`;
+}
+</script>
+</body>
+</html>

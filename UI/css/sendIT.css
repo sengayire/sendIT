@@ -12,7 +12,24 @@ body{
 	width:100%;
 	margin-left: 0px;
 	overflow: hidden;
-	height: 70px;
+	height: 700px;
+}
+@media screen and (min-width: 400px) {
+    .container {
+    width:100%;
+	margin-left: 0px;
+	overflow: hidden;
+	height: auto
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+		width:100%;
+		margin-left: 0px;
+		overflow: hidden;
+		height: auto;
+    }
 }
 header #logo img{
     max-width: 70px;
@@ -35,12 +52,12 @@ header #logo img{
 
 	}
 	.menu{
-		margin-right: 350px;
+		margin-right: 20px;
 		display: inline;
-		width: 500px;
+	
 	}
 .menu #home-mn{
-		margin-left: 150px;
+		margin-left: 20px;
 		display: inline;
 		width: 1000px;
 	}	
@@ -122,119 +139,168 @@ header .user-au:hover{
 #showcase{
 	
 	background: url() no-repeat;
-
+	height: 100%;
 }
 #showcase .container{
 	width: 100%;
-	min-height: 300px;
+	height: 500%;
 	margin-left: 30px;
 	background-image: url(../images/SignUp.jpg);
 	background-repeat: none;
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 0;
+	font-size: 40px;
+	display: block;
+	color: #FFFFFF;
 }
 #showcase h1{
 	margin-top: 10px;
 	font-size: 40px;
-	margin-bottom: 0px;
+	position: center;
+	margin-top: 200px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 200px;
+}
+#showcase{
+	height: 500px;
 }
 
-#showcase .container #intro .welcome{
-   width: 700px;
-	float: left;
-	margin-left: 200px;
-	margin-top: 20px;
-	color: #FFFFFF;
+@media screen 
+  and (min-width: 320px) {
+	#showcase .container  {
+	width:100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 5px;
+	height: auto;
+	display: block;
+	background-image: url(../images/SignUp.jpg);
+	}
+  }
+  
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	#showcase .container{
+	width:100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 5px;
+	height: auto;
+	display: block;
+	background-image: url(../images/SignUp.jpg);
+	}
+
+}
+@media screen and (max-width: 480px){
+
+	font-size: 10px;
+}
+@media screen and (min-width: 400px)
+and (min-width: 320px) 
+and (max-width: 480px)
+
+ {
+    #showcase .container{
+    width:100%;
+	margin-left: 5px;
+	font-size: 5px;
+	overflow: hidden;
+	height: auto;
+	display: block;
+	background-image: url(../images/SignUp.jpg);
+    }
 }
 
-#showcase .container #intro .geo_pic{
-	float: right;
+@media screen and (min-width: 800px) {
+    #showcase .container{
+		width:100%;
+		margin-left: 10px;
+		overflow: hidden;
+		font-size: 5px;
+		height: auto;
+		display: block;
+		background-image: url(../images/SignUp.jpg);
+    }
 }
-#geo_pic{	
-	width: 100px;
-	float: right;
-	height: 600;
-	margin-right: 2px;
-	margin-top: 20px;
-}
-.welcome{
+
+/* .welcome{
 
 	width: 700px;
 	height: 300px;
 	float: left;
-}
-#geo_pic{
-	width: 200px;
-	float: right;
-}
-#newsletter{
-	padding: 15px;
-	color: #ffffff;
-	background:#35425a;
-	height: 70px;
-
-	background:#f8d7ac;
-
-	background:#f8cf99;
-
-	height: 80px;
-}
-#newsletter h1{
-	float: left;
-	margin-left: 300px;
-	margin-bottom: 200px;
-}
-#newsletter form{
-	float: right;
-	margin-top: 20px;
-	margin-right: 50px;
-}
-#newsletter input[type="text"]{
-	padding: 4px;
-	height: 25px;
-	width: 250px;
-	border-radius: 5px;
-}
-#newsletter .button_1{
-	height: 35px;
-	background:#e48542;
-	border: 0;
-	border-radius: 8px;
-	margin-right: 10px;
-	padding-left: 20px;
-	color: #ffffff;
-	width: 150px;
-}
+} */
 
 /*  login form stules */
 
 #login-frm input, button{
 	display: block;
-	height: 35px;
-	margin-top: 6px;
+	height:40px;
+	margin-top: 0;
 	width: 300px;
 	margin-left: 25px;
-	border-radius: 10px;
+	border-radius: 4px;
+	margin-top: 5px;
 
 }
 #login-frm h1{
 	
-color:white;
+color:rgb(228, 124, 27);
 }
 #login-frm .frm-container input{
 	background: #fffefece;
-	
-	border-color: #faa96fa9;
-	color: rgb(37, 36, 36);
+	border-color: #faa96f41;
+	color: rgba(37, 36, 36, 0.212);
 
 }
 .form-sct .container{
-
-	height: 1000px;
+	height: 610px;
 	width: 100%;
 	background-image: url(../images/SignUp.jpg)
 }
-form #login-frm{
-    	max-height: 500px;
+#login-frm .frm-container{
+		max-height: 500px;
+		margin-left: 500px;
+       
 }
+
+@media screen 
+  and (min-width: 320px) {
+	#login-frm .frm-container  {
+	   position: absolute;
+	}
+  }
+  
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	#login-frm .frm-container{
+		position: absolute;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+}
+@media screen and (max-width: 480px){
+
+	font-size: 10px;
+}
+@media screen and (min-width: 400px)
+and (min-width: 320px) 
+and (max-width: 480px)
+
+ {
+	#login-frm .frm-container{
+   position: relative;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #login-frm .frm-container{
+		position: relative;
+		
+    }
+}
+
+ 
 .orders-table table tr input{
 	width: 60px;
 	margin-right: 1px;
@@ -251,7 +317,7 @@ form #login-frm{
 	
 }
 .frm-container{
-	background-color: #d1b49f8e;
+	background-color: #ffffff;
 	width: 350px;
 	position: center;
 	margin-left: 400px;
@@ -269,57 +335,9 @@ form #login-frm{
 	color: #FFFFFF;
 }
 /* Styling footer*/
-.services{
+#signup-body{
 
-	float: left;
-	margin-left: 10px;
-	width: 400px;
-	margin-top: 5px;
-
-}
-.services ul{
-	list-style: none;
-}
-.our-work {
-	float: right;
-	width: 700px;
-	margin-top: 0;
-	margin-right: 70px;
-}
-.our-work ul{
-	list-style: none;
-}
-.services #left{
- float: left;
-}
-.services #right{
-	float: right;
-}
-.our-work #left{
-float: left;
-}
-.our-work #right{
- float: right;
- margin-right: 5px;
-}
-.our-work #right ul li img{
-	height: 80px;
-	width: 80px;
-	display: inline;
-   }
-   .our-work #right ul li{
-	display: inline;
-   }
-/*styling sign-up Page*/
-.container  #signup-body{
-	margin-left: 0%;
-}
- #signup-body{
-
-	width: 1300px;
-	height: 420px;
-	margin-bottom: 5px;
-	background-image: url(../images/SignUp.jpg);
+	background-image: url('../images/SignUp.jpg')
 }
 #signup-frm h1{
 	margin-left: 125px;
@@ -338,6 +356,7 @@ float: left;
 	border-radius: 4px;
 	border-color: #faa96fa9;
 	color: rgb(37, 36, 36);
+	margin-left: 20px;
 	
 }
 #signup button{
@@ -345,6 +364,7 @@ float: left;
 	border-radius: 10px;
 	border-color: transparent;
 	color: #FFFFFF;
+	margin-left: 20px;
 }
 
 #signup  #right {
@@ -354,7 +374,12 @@ float: left;
 	margin-top: 10px;
 }
 /* index style*/
+#right #signup-frm{
 
+	background-color: white;
+	width: 350px;
+	margin-top: 40px;
+}
 #signup  #left {
 	float: left;
 	width: 800px;
@@ -486,6 +511,7 @@ float: left;
 	padding-top: 15px;
 	font-weight: bold;
 }
+
 .orders-table{
      width: 800px;
     min-height: 300px;
@@ -494,9 +520,15 @@ float: left;
 	margin-left: 100px;
 	margin-top: 30px;
 	float: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
 }
-
-.orders-table table tr{
+.orders-table th{
+   background-color: #e48542;
+   height: 40px;
+   font-weight: bold;
+}
+.orders-table table tr:nth-child(even){
 	background-color: #f8a971b0;
 	height: 30px;
 }
