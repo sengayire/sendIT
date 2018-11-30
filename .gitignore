@@ -1,0 +1,6 @@
+node_modules/
+.nyc_output/
+.eslintrc
+.travis.yml
+.env
+.babelrc

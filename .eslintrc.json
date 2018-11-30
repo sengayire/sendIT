@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "airbnb-base"
+    ],
+    "plugins": [
+        "mocha"
+    ],
+    "env": {
+        "mocha": true
+    },
+    "rules": {
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "server/test/**"
+                ]
+            }
+        ],
+        "consistent-return": "off"
+    }
+}

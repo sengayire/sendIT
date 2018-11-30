@@ -1,0 +1,544 @@
+@charset "UTF-8";
+
+body{
+
+	font:14px/1.5 Arial , Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+.container{
+
+	width:100%;
+	margin-left: 0px;
+	overflow: hidden;
+	height: 700px;
+}
+@media screen and (min-width: 400px) {
+    .container {
+    width:100%;
+	margin-left: 0px;
+	overflow: hidden;
+	height: auto
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+		width:100%;
+		margin-left: 0px;
+		overflow: hidden;
+		height: auto;
+    }
+}
+header #logo img{
+    max-width: 70px;
+    max-height: 70px;
+    margin-top: 5px;
+    padding-left: 30px;
+    float: left;
+	}
+	#sendit{
+		margin-top: 7px;
+		font-size: 15px;
+	}
+	#it{
+
+		color: #404040;
+	}
+	.pp{
+		color: #404040;
+
+
+	}
+	.menu{
+		margin-right: 20px;
+		display: inline;
+	
+	}
+.menu #home-mn{
+		margin-left: 20px;
+		display: inline;
+		width: 1000px;
+	}	
+header{
+	background: #FFFFFF;
+	color: #ffffff;
+	padding-top:0px;
+	height:70px;
+	border-bottom:#e8451d 3px solid;
+}
+header a{
+
+	color: #FF0000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: 16px;
+}
+header ul{
+	margin: 0;
+	padding: 0;
+	height: 30px;
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0 22px 0 20px;
+
+
+}
+ .user{
+	float: right;
+	display: inline;
+	margin-left: 5px;
+	margin-right: 0;
+	width: 125px;
+	margin-top: 25px;
+	
+}
+  .user a{
+  	margin-right: 5px;
+  }
+header #branding{
+	float: left;
+	display: inline;
+	width: 300px;
+}
+header #branding h1{
+	margin: 0;
+
+}
+header nav{
+	float: right;
+	margin-top: 15px;
+}
+header .highlight, .current a{
+	color: #e8451d;
+	font-weight: bold;
+
+}
+.highlight{
+	font-size: 40px;
+}
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+	background-color: #e8451d;
+
+}
+header li:hover{
+	background-color: #e8451d;
+	height: 40px;
+	color:#cccccc; 
+}
+header .user-au:hover{
+	background-color: #e8451d;
+	height: 40px;
+	color: #cccccc;
+}
+#showcase{
+	
+	background: url() no-repeat;
+	height: 100%;
+}
+#showcase .container{
+	width: 100%;
+	height: 500%;
+	margin-left: 30px;
+	background-image: url(../images/SignUp.jpg);
+	background-repeat: none;
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 0;
+	font-size: 40px;
+	display: block;
+	color: #FFFFFF;
+}
+#showcase h1{
+	margin-top: 10px;
+	font-size: 40px;
+	position: center;
+	margin-top: 200px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 200px;
+}
+#showcase{
+	height: 500px;
+}
+
+@media screen 
+  and (min-width: 320px) {
+	#showcase .container  {
+	width:100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 5px;
+	height: auto;
+	display: block;
+	background-image: url(../images/SignUp.jpg);
+	}
+  }
+  
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	#showcase .container{
+	width:100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 5px;
+	height: auto;
+	display: block;
+	background-image: url(../images/SignUp.jpg);
+	}
+
+}
+@media screen and (max-width: 480px){
+
+	font-size: 10px;
+}
+@media screen and (min-width: 400px)
+and (min-width: 320px) 
+and (max-width: 480px)
+
+ {
+    #showcase .container{
+    width:100%;
+	margin-left: 5px;
+	font-size: 5px;
+	overflow: hidden;
+	height: auto;
+	display: block;
+	background-image: url(../images/SignUp.jpg);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #showcase .container{
+		width:100%;
+		margin-left: 10px;
+		overflow: hidden;
+		font-size: 5px;
+		height: auto;
+		display: block;
+		background-image: url(../images/SignUp.jpg);
+    }
+}
+
+/* .welcome{
+
+	width: 700px;
+	height: 300px;
+	float: left;
+} */
+
+/*  login form stules */
+
+#login-frm input, button{
+	display: block;
+	height:40px;
+	margin-top: 0;
+	width: 300px;
+	margin-left: 25px;
+	border-radius: 4px;
+	margin-top: 5px;
+
+}
+#login-frm h1{
+	
+color:rgb(228, 124, 27);
+}
+#login-frm .frm-container input{
+	background: #fffefece;
+	border-color: #faa96f41;
+	color: rgba(37, 36, 36, 0.212);
+
+}
+.form-sct .container{
+	height: 610px;
+	width: 100%;
+	background-image: url(../images/SignUp.jpg)
+}
+#login-frm .frm-container{
+		max-height: 500px;
+		margin-left: 500px;
+       
+}
+
+@media screen 
+  and (min-width: 320px) {
+	#login-frm .frm-container  {
+	   position: absolute;
+	}
+  }
+  
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	#login-frm .frm-container{
+		position: absolute;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+}
+@media screen and (max-width: 480px){
+
+	font-size: 10px;
+}
+@media screen and (min-width: 400px)
+and (min-width: 320px) 
+and (max-width: 480px)
+
+ {
+	#login-frm .frm-container{
+   position: relative;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #login-frm .frm-container{
+		position: relative;
+		
+    }
+}
+
+ 
+.orders-table table tr input{
+	width: 60px;
+	margin-right: 1px;
+	height: 30px;
+	text-align: center;
+	background-color: #e48542;
+	color: white;
+	
+}
+.orders-table table{
+	width: 60px;
+	margin-right: 1px;
+	text-align: center;
+	
+}
+.frm-container{
+	background-color: #ffffff;
+	width: 350px;
+	position: center;
+	margin-left: 400px;
+	margin-top: 100px;
+	height: 250px;
+	border-top: inset;
+}
+.frm-container .button_1{
+	background-color: #e48542;
+	color: white;
+}
+#get button{
+
+	background-color: #e48542;
+	color: #FFFFFF;
+}
+/* Styling footer*/
+#signup-body{
+
+	background-image: url('../images/SignUp.jpg')
+}
+#signup-frm h1{
+	margin-left: 125px;
+
+}
+#signup button, input {
+	display: block;
+	height: 35px;
+	margin-top: 10px;
+	width: 300px;
+	margin-left: 0;
+	margin-right: 50px;	
+}
+#signup input{
+	background: #fffefece;
+	border-radius: 4px;
+	border-color: #faa96fa9;
+	color: rgb(37, 36, 36);
+	margin-left: 20px;
+	
+}
+#signup button{
+	background: #e48542;
+	border-radius: 10px;
+	border-color: transparent;
+	color: #FFFFFF;
+	margin-left: 20px;
+}
+
+#signup  #right {
+	float: right;
+	width: 400px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+/* index style*/
+#right #signup-frm{
+
+	background-color: white;
+	width: 350px;
+	margin-top: 40px;
+}
+#signup  #left {
+	float: left;
+	width: 800px;
+	margin-top: 60px;
+	font-family: -apple-system, BlinkMacSystemFont;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-size: 47px;
+	margin-left: 20px;
+}
+/* index page style*/
+#Track{
+	float: left;
+	height: 70px;
+}
+
+#Track input{
+
+	float: left;
+}
+/* dashb*/
+.form-dsb #dshb{
+	height: 100%;
+	width: 100%;
+}
+.form-dsb form {
+	width: 70%;
+	background: #ffffff;
+	height: 300px;
+	margin-left: 50px;
+	margin-top: 60px;
+	float: left;
+    
+}
+.form-dsb button{
+
+	width: 100px;
+}
+.form-dsb h1 {
+	font-size: 25px;
+	color: #404040;
+	margin-left: 20px;
+	margin-top: 30px;
+    
+}
+.form-dsb form input{
+ 	float: none;
+	display: inline;
+	width: 200px;
+	height: 40px;
+}
+.form-dsb form input[type="number"]{
+	width: 50px;
+	margin-right: 0;
+	padding-left: 5px;
+	margin-top: 20px;
+	height: 20px;
+}
+.form-dsb form button{
+
+	display: inline;
+
+}
+.quote{
+	margin-top: 20px;
+	margin-left: 20px;
+	background: #e48542;
+	height: 65px;
+	position: center;
+	width: 760px;
+	color: white;
+}
+.quote span{
+	margin-right: 50px;
+	margin-left: 40px;
+}
+.quote-info{
+	margin-top: 20px;
+
+}
+.quote-info,label{
+	margin-left: 20px;
+
+}
+
+.btn-quote{
+	float: right;
+	margin-right: 20px;
+	background-color: #ff974fbf;
+	color: #ffffff;
+}
+.btn-add-quote{
+	background: #565555b5;
+	color: #ffffff;
+}
+.user-quote aside{
+	float: right;
+	margin-top: 60px;
+	height: 300px;
+	background: white;
+	width: 23%;
+	margin-left: 10px;
+	
+}
+.orders_port{
+	margin-top: 80px;
+}
+.orders_port h1{
+
+	margin-left: 100px;
+}
+#header-info{
+	width: 800px;
+	margin-left: 100px;
+	
+}
+#header-info ul{
+	height: 50px;
+	background: #e48542;
+}
+#header-info li{
+	float: left;
+	display: inline;
+	list-style: none;
+	padding-left: 20px;
+	height: 40px;
+	color: white;
+	width: 80px;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+.orders-table{
+     width: 800px;
+    min-height: 300px;
+	max-height: 300px;
+	background: white;
+	margin-left: 100px;
+	margin-top: 30px;
+	float: left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+.orders-table th{
+   background-color: #e48542;
+   height: 40px;
+   font-weight: bold;
+}
+.orders-table table tr:nth-child(even){
+	background-color: #f8a971b0;
+	height: 30px;
+}
+.orders-table table{
+	width: 800px;
+}
+#admin-action{
+	float: right;
+	margin-right: 50px;
+	height: 50px;
+	width: 100px;
+	background-color: #FFFFFF;
+}
