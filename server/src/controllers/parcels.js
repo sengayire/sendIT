@@ -1,53 +1,46 @@
-
-import uuid from 'uuid/v1';
-import { celebrate, Joi } from 'celebrate';
+import uuid from 'uuid';
 import parcels from '../data/parcels';
 import users from '../data/users';
 import queries from '../database/parcelsqueries';
 
+
 class ParcelsController {
   // create a parcel
   static createParcel(req, res) {
-    celebrate({
-      body: Joi.object().keys({
-        origin: Joi.string().required().trim(),
-        destination: Joi.string().required().trim(),
-        weight: Joi.number().integer().required(),
-      }),
-    });
-
     const {
-      id, origin, destination, userId, createdDate, presentLocation, price, weight,
+      userId,
+      origin,
+      destination,
+      receiver,
+      createdDate,
+      presentLocation,
+      price,
+      weight,
+      status,
     } = req.body;
 
     if (!origin || !destination || !weight) {
       res.status(400).send({ message: 'Please provide all details' });
     }
-    const parcel = [
-      id,
+    const parcel = {
+      id: uuid(),
+      userId,
       origin,
       destination,
-      userId,
+      receiver,
       createdDate,
       presentLocation,
       price,
       weight,
-    ];
-    // parcels.push(parcel);
+      status,
+    };
+    parcels.push(parcel);
 
-    queries.insert(parcel);
-
+    // queries.insert(parcel);
     res.status(201).send({
       Message: 'Parcel created successfully!',
       Parcel: {
-        id,
-        origin,
-        destination,
-        userId,
-        createdDate,
-        presentLocation,
-        price,
-        weight,
+        parcel,
       },
     });
   }
