@@ -1,7 +1,5 @@
 import { Pool } from 'pg';
-import dotenv from 'dotenv';
 
-dotenv.config();
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
@@ -25,5 +23,7 @@ const execute = async (sql, data = []) => {
     connection.release();
   }
 };
-
+// pool.on('connect', () => {
+//   console.log('connected successfull');
+// });
 export default execute;
