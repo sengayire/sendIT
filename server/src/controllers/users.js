@@ -1,5 +1,6 @@
 
 import uuid from 'uuid/v1';
+import jwt from 'jsonwebtoken';
 import users from '../data/users';
 
 class UsersContollers {
@@ -33,10 +34,24 @@ class UsersContollers {
 
   static getOneUser(req, res) {
     const { id } = req.params;
-    const items = users.find(value => value.id === id);
-    res.status(200).send({
-      items,
+    const user = users.find(value => value.id === id);
+    jwt.sign({ user }, 'secretkey', (err, token) => {
+      res.status(200).send({
+        token,
+      });
     });
+  }
+
+  static verify(req, res, next) {
+    const bear = req.body.authorization;
+    if (typeof bear !== 'undefined') {
+      const bearer = bear.split(' ');
+      const bearToken = bearer[1];
+      req.token = bearToken;
+      next();
+    } else {
+      res.send('forbiden');
+    }
   }
 
   // sign in

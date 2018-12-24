@@ -1,7 +1,7 @@
 import uuid from 'uuid';
+import jwt from 'jsonwebtoken';
 import parcels from '../data/parcels';
 import execute from '../database/database';
-
 
 // create a parcel table
 
@@ -26,57 +26,57 @@ class ParcelsController {
   }
 
   static async createParcel(req, res, next) {
-    const {
-      origin,
-      destination,
-      userId,
-      createdDate,
-      price,
-      presentLocation,
-      weight,
-    } = req.body;
+    jwt.verify(req.token, 'secretKey', (err, datas) => {
+      if (err) {
+        res.sendStatus(203);
+      } else {
+        const {
+          origin, destination, userId, createdDate, price, presentLocation, weight,
+        } = req.body;
 
-    if (!origin || !destination || !weight) {
-      const error = new Error('cannot handle request with data provided');
-      error.httpStatusCode = 400;
+        if (!origin || !destination || !weight) {
+          const error = new Error('cannot handle request with data provided');
+          error.httpStatusCode = 400;
 
-      // raise this as an error so that our
-      // default error handler at
-      // line 15 to line 22 of server.js
-      // can handler at
-      next(error);
-      return;
-      // res.status(400).send({ message: 'Please provide all details' });
-    }
-    const addParcles = 'INSERT INTO parcels VALUES($1,$2,$3,$4,$5,$6,$7,$8) RETURNING id';
-    // we're using uuid() to generate a random but unique value
-    // we can use as the Id for this record to be created
-    // this only works if we created the table to have the id
-    // column as a String and not Integer
+          // raise this as an error so that our
+          // default error handler at
+          // line 15 to line 22 of server.js
+          // can handler at
+          return next(error);
+        }
+        const addParcles = 'INSERT INTO parcels VALUES($1,$2,$3,$4,$5,$6,$7,$8) RETURNING id';
+        // we're using uuid() to generate a random but unique value
+        // we can use as the Id for this record to be created
+        // this only works if we created the table to have the id
+        // column as a String and not Integer
 
-    const data = [
-      uuid(), origin,
-      destination,
-      userId,
-      createdDate,
-      price,
-      presentLocation,
-      weight,
-    ];
+        const data = [
+          uuid(), origin,
+          destination,
+          userId,
+          createdDate,
+          price,
+          presentLocation,
+          weight,
+        ];
 
-    const result = await execute(addParcles, data);
+        const result = execute(addParcles, data);
 
-    // get back the record we just created
-    const record = result.rows[0];
+        // get back the record we just created
+        const record = result.rows[0];
 
-    // respond to the client with an appropriate HTTP status code,
-    // as well as the id of the newly created Parcel
-    res.status(201).send({
-      success: true, parcel: record.id,
+        // respond to the client with an appropriate HTTP status code,
+        // as well as the id of the newly created Parcel
+        res.status(200).send({
+          // success: true,
+          datas,
+          parcel: record.id,
+        });
+      }
     });
   }
 
-  // update  a parcel
+  // update a parcel
   static async updateParcel(req, res) {
     const { id } = req.params;
     const { destination } = req.body;

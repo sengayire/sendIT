@@ -1,14 +1,21 @@
 import express from 'express';
 import { celebrate, Joi } from 'celebrate';
+import usersController from '../controllers/users';
+
+// import passport from '../midleware/passport';
+// import authorize from '../midleware/auth';
 import ParcelsController from '../controllers/parcels';
 
 const parcelsRouter = express.Router();
+// const secure = passport.authenticate('jwt',
+// { session: false, failureRedirect: '/api/v1/unauthorized' });
 
 
 // parcels routes
-parcelsRouter.post('/create', ParcelsController.createTable);
-parcelsRouter.post('/', celebrate({
+// parcelsRouter.post('/create', secure, authorize.admin, ParcelsController.createTable);
+parcelsRouter.post('/', usersController.verify, celebrate({
   body: Joi.object().keys({
+    authorization: Joi.string().required().trim(),
     origin: Joi.string().required().trim(),
     destination: Joi.string().required().trim(),
     userId: Joi.string().required(),
