@@ -1,6 +1,6 @@
 import express from 'express';
 import { celebrate, Joi } from 'celebrate';
-import usersController from '../controllers/users';
+
 
 // import passport from '../midleware/passport';
 // import authorize from '../midleware/auth';
@@ -12,15 +12,15 @@ const parcelsRouter = express.Router();
 
 
 // parcels routes
-// parcelsRouter.post('/create', secure, authorize.admin, ParcelsController.createTable);
-parcelsRouter.post('/', usersController.verify, celebrate({
+parcelsRouter.post('/create', ParcelsController.createTable);
+parcelsRouter.post('/', ParcelsController.verify, celebrate({
   body: Joi.object().keys({
     authorization: Joi.string().required().trim(),
     origin: Joi.string().required().trim(),
     destination: Joi.string().required().trim(),
     userId: Joi.string().required(),
     createdDate: Joi.date().required(),
-    price: Joi.string().required(),
+    price: Joi.number().required(),
     presentLocation: Joi.string().required().trim(),
     weight: Joi.number().integer().required(),
   }),

@@ -3,12 +3,12 @@ import jwt from 'jsonwebtoken';
 import parcels from '../data/parcels';
 import execute from '../database/database';
 
-// create a parcel table
 
 class ParcelsController {
   // create a parcel
 
   static async createTable(req, res) {
+    // create a parcel table
     const createTable = `CREATE TABLE parcels(
       id UUID  PRIMARY KEY,
       origin VARCHAR(30),
@@ -24,6 +24,19 @@ class ParcelsController {
     });
     return execute(createTable);
   }
+
+  static verify(req, res, next) {
+    const bearer = req.body.authorization;
+    if (typeof bearer !== 'undefined') {
+      const bear = bearer.split(' ');
+      const bearToken = bear[1];
+      req.token = bearToken;
+      next();
+    } else {
+      res.send('forbiden');
+    }
+  }
+  // ///////////
 
   static async createParcel(req, res, next) {
     jwt.verify(req.token, 'secretKey', (err, datas) => {
