@@ -9,7 +9,7 @@ usersRouter.post('/create', usersController.createTable);
 usersRouter.post('/signup', usersController.signup);
 usersRouter.get('/', usersController.allUsers);
 usersRouter.get('/:id', usersController.oneUser);
-usersRouter.get('/signin', usersController.singIn);
+usersRouter.post('/signin', usersController.singIn);
 // usersRouter.get('/logout', usersController.logout);
 // usersRouter.put('/login', user)
 

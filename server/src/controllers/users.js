@@ -80,17 +80,17 @@ class UsersControllers {
         message: 'please provide email and password',
       });
     }
-    const getUser = 'SELECT * FROM users WHERE email = $1';
-    const row = await execute(getUser, email);
+    const getUser = 'SELECT email FROM users WHERE email = $1';
+    const row = await execute(getUser, [email]);
     const user = [row];
-    if (!user) {
-      res.status(400).send({
-        message: 'Wrong email or password',
-      });
-    } else {
+    if (user) {
       res.status(200).send({
         message: 'Loging successfully',
         user: user[0],
+      });
+    } else {
+      res.status(400).send({
+        message: 'Wrong email or password',
       });
     }
   }
